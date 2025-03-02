@@ -1,11 +1,9 @@
-
 body {
   font-family: inter, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-
 
 .container {
   display: flex;
@@ -15,9 +13,8 @@ body {
   padding: 20px;
 }
 
-
 h1 {
-  font-size:40px;
+  font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: normal;
@@ -30,19 +27,16 @@ h1 {
   gap: 20px;
 }
 
-
 .box {
   padding: 20px;
   border-radius: 8px;
 }
-
 
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 
 input {
   width: 200px;
@@ -53,7 +47,6 @@ input {
   text-align: center;
 }
 
-
 button {
   background-color: #926ea8;
   color: white;
@@ -63,17 +56,16 @@ button {
   cursor: pointer;
 }
 
-
 .fact {
   font-size: 20px;
   margin-top: 10px;
 }
 
-
 .cat-image {
   width: 200px;
   margin: 10px;
 }
+
 .results-container {
   background-color: white;
   margin-top: 20px;
@@ -86,7 +78,6 @@ button {
   color: #080101;
 }
 
-
 #error-container {
   background-color: #d51616;
   padding: 10px;
@@ -94,11 +85,77 @@ button {
   display: none;
 }
 
-
 ol li {
   text-align: start;
   padding-left: 10px;
   font-size: 10px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .results-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+  }
+
+  .cat-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  ol li {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .results-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  ol li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    font-size: 12px;
+  }
 }
