@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cats App</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div id="error-container"></div>
+    
+    <div class="container">
+        <h1>The Cats App</h1>
+        <div class="input-container">
+            <div class="box">
+                <label for="facts">Number Of Cats Facts (50 Maximum)</label>
+                <input type="number" id="facts" placeholder="number of cat facts (50 max)">
+                <button>Submit</button>
+            </div>
+            <div class="box">
+                <label for="photos">Number Of Cats Photos (10 Max)</label>
+                <input type="number" id="photos" placeholder="number of cat photos (10 max)">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div id="facts-container"></div> 
+    </div>
+    
+    <div class="results-container"></div>
+    
+    <script src="./src/main.js"></script>
+</body>
+</html>
